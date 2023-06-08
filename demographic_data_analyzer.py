@@ -26,7 +26,8 @@ def calculate_demographic_data(print_data=True):
 
   # percentage with salary >50K
   higher_education_rich = round(
-                          (higher_education[higher_education['salary'] == '>50K'].shape[0]                           / higher_education.shape[0]) * 100, 1)
+                          (higher_education[higher_education['salary'] == '>50K'].shape[0] 
+                           / higher_education.shape[0]) * 100, 1)
   lower_education_rich = round(
                           (lower_education[lower_education['salary'] == '>50K'].shape[0]
                          / lower_education.shape[0]) * 100, 1)
